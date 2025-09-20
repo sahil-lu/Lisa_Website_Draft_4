@@ -19,7 +19,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="/lisa-logo.svg" 
+              src="/lisa_-_final_-_logo_-_wite__e2e8f0 (2) copy.svg" 
               alt="Lisa AI" 
               className="h-8 w-auto"
             />

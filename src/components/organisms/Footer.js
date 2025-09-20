@@ -34,15 +34,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
-            <div className="text-2xl font-bold text-purple-400 mb-4">
-              Lisa AI
+            <div className="mb-4">
+              <img 
+                src="/lisa_-_final_-_logo_-_wite__e2e8f0 (2) copy.svg" 
+                alt="Lisa AI" 
+                className="h-12 w-auto filter brightness-0 invert"
+              />
             </div>
             <Typography variant="bodySmall" className="text-neutral-300 mb-6">
               AI-first L&D platform that ships skills fast. Transform your learning and development with our comprehensive solution.
             </Typography>
-            <Button variant="primary" size="md">
-              Book a Demo
-            </Button>
           </div>
 
           {/* Footer Links */}

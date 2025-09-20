@@ -1,76 +1,48 @@
 import React from 'react';
-import Typography from '../atoms/Typography';
-import Button from '../atoms/Button';
-import Icon from '../atoms/Icon';
 
 const Hero = () => {
   return (
     <section id="hero" className="py-20 lg:py-32 bg-gradient-to-br from-purple-50 via-white to-purple-50">
       <div className="container-max section-padding">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Shimmering Alert Heading */}
-          <div className="mb-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            <div className="inline-block bg-gradient-to-r from-red-500 via-orange-500 to-red-500 bg-[length:200%_100%] animate-shimmer text-white px-6 py-3 rounded-full shadow-lg">
-              <Typography variant="h5" className="font-bold text-white">
-                Corporate L&D is DOOMED🤯
-              </Typography>
+          {/* Alert Banner */}
+          <div className="mb-8">
+            <div style={{
+              display: 'inline-block',
+              background: 'linear-gradient(90deg, #dc2626, #f97316, #dc2626)',
+              backgroundSize: '200% 100%',
+              animation: 'shimmer 2s ease-in-out infinite',
+              color: 'white',
+              padding: '16px 32px',
+              borderRadius: '50px',
+              fontSize: '20px',
+              fontWeight: 'bold',
+              boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
+              border: '2px solid #b91c1c'
+            }}>
+              Corporate L&D is DOOMED🤯
             </div>
           </div>
+          
 
           {/* Main Headline */}
-          <Typography 
-            variant="h1" 
-            className="mb-6 animate-fade-up"
-            as="h1"
-            style={{ animationDelay: '0.2s' }}
-          >
+          <h1 className="mb-6 text-5xl lg:text-6xl font-bold text-neutral-950 leading-tight">
             Legacy L&D is slow. Lisa ships skills now.
-          </Typography>
+          </h1>
           
           {/* Subheadline */}
-          <Typography 
-            variant="lead" 
-            className="mb-8 text-neutral-700 animate-fade-up"
-            style={{ animationDelay: '0.2s' }}
-          >
+          <p className="mb-8 text-xl text-neutral-700">
             AI-first platform + 500+ course library + just-in-time learning. Onboard faster, upskill smarter, enable frontline in days — not quarters.
-          </Typography>
+          </p>
           
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <Button variant="secondary" size="md" className="px-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <button className="px-12 py-3 border-2 border-purple-300 bg-white text-neutral-950 hover:bg-purple-50 rounded-full font-semibold">
               Explore 500 Courses Library
-            </Button>
-            <Button variant="primary" size="md" className="px-12">
+            </button>
+            <button className="px-12 py-3 bg-neutral-950 text-white hover:bg-neutral-800 rounded-full font-semibold">
               Book a Demo
-            </Button>
-          </div>
-          
-          {/* Social Proof */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-neutral-600 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-            <div className="flex items-center gap-2">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Icon key={i} name="star" size="sm" className={i < 4 ? "text-yellow-400" : "text-neutral-300"} />
-                ))}
-              </div>
-              <span className="font-medium">4.8/5</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-neutral-300"></div>
-            <div className="flex items-center gap-2">
-              <Icon name="users" size="sm" className="text-purple-600" />
-              <span>35 years in education</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-neutral-300"></div>
-            <div className="flex items-center gap-2">
-              <span>Trusted by</span>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-neutral-200 rounded flex items-center justify-center text-xs font-bold">A</div>
-                <div className="w-8 h-8 bg-neutral-200 rounded flex items-center justify-center text-xs font-bold">B</div>
-                <div className="w-8 h-8 bg-neutral-200 rounded flex items-center justify-center text-xs font-bold">C</div>
-                <span className="text-xs">+more</span>
-              </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
